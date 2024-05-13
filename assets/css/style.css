@@ -1,89 +1,57 @@
-/*universal elements*/
 * {
-    /*box-sizing imapacts the images in the main 3 sections*/
     box-sizing: border-box;
-    /*padding seems to have no impact here*/
     padding: 0;
-    /*margin seems to have no impact here*/
     margin: 0;
 }
 
-/*element selectors*/
-/*element selector for body*/
 body {
-/*background-color here impacts the main color of the website*/
     background-color: #d9dcd6;
 }
 
-/*element selector for ul*/
-/*this section might not be necessary*/
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .seo {
+    color: #d9dcd6;
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
 ul {
     list-style-type: none;
 }
 
-/*element selector for li*/
 li {
-    /*This section is necessary to make the nav pane inline*/
     display: inline-block;
-    /*This section is necessary to put 25px space between the nav pane items*/
     margin-left: 25px;
 }
 
-/*element selector for header*/
-header {
-    /*padding section needed to make nav bar tall enough*/
-    padding: 20px;
-    /*needed for the Horiseon title to have the correct font; maybe move to h1 section*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /*backgroun color needed for nav pane*/
-    background-color: #2a607c;
-    /*Not sure what this does, may be redundant*/
-    color: #ffffff;
-}
-
-/*element selecter for h1*/
-/*Required to format Horiseon header specifically*/ 
-h1 {
-    /*Displays header name in line with navpane items*/
-    display: inline-block;
-    /*Sets header size specifically and not nav pane items*/
-    font-size: 48px;
-    /*Sets header font color to match background*/
-    color: #d9dcd6;
-}
-
-/*element selector for nav*/
-nav {
-    /*padding-top necessary to keep the nav items down and inline with Horiseon*/
-    padding-top: 15px;
-    /*this adds a little extra margin to the nave page items from the right added with li elements*/
-    margin-right: 20px;
-    /*this is needed to keep the nav pane items to the right of Horiseon instead of under*/
-    float: right;
-    /*font specific to nav pane items*/
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /*font size specific to nav pane items*/
-    font-size: 20px;
-}
-
-/*element selector for anchored*/
 a {
-    /*Assigns the font color to the nav page items*/
     color: #ffffff;
-    /*Makes it so the li items are not underlined*/
     text-decoration: none;
 }
 
-/*element selector for paragraph*/
 p {
-    /*Sets the font side for paragraph items to 16px*/
     font-size: 16px;
 }
 
-
-/*class selector for hero class*/
 .hero {
-    height: 1100px;
+    height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -91,59 +59,46 @@ p {
     background-position: center;
 }
 
-/*class selector for content*/
-section {
-    /*limits the section to 75% of the page*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
     width: 75%;
-    /*enables right content pane to appear in line with the primary content*/
     display: inline-block;
-    /*provides a 20px margin between the primary content and the right content*/
     margin-left: 20px;
 }
 
-/*element selector for h2*/
-h2 {
-    /*Creates a margin between the header and paragraph*/
+.search-engine-optimization,
+.online-reputation-management,
+.social-media-marketing {
     margin-bottom: 20px;
-    /*Sets the header to 36px*/
-    font-size: 36px;
-}
-
-/*class selector for primary-content*/
-.primary-content {
-    /*creates a margin between each section*/
-    margin-bottom: 20px;
-    /*creates padding between top of the content box and header, images*/
     padding: 50px;
-    /*sets section height*/
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
-/**/
-.primary-content img {
+.search-engine-optimization img,
+.online-reputation-management img,
+.social-media-marketing img {
     max-height: 200px;
 }
 
-/*class selector for float-left*/
-.float-left {
-    /*makes image in contect section sit on the left*/
-    float: left;
-    /*provides a 25px margin between image and content*/
-    margin-right: 25px;
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
-/*class selector for float-right*/
-.float-right {
-    /*makes image in contect section sit on the right*/
-    float: right;
-    /*provides a 25px margin between image and content*/
-    margin-left: 25px;
-}
-
-/**/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -155,34 +110,35 @@ h2 {
     background-color: #2589bd;
 }
 
-/**/
-.benefit-details {
+.benefit-lead,
+.benefit-brand,
+.benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/**/
-h3 {
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/**/
-.benefit-details img {
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/**/
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-/**/
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
