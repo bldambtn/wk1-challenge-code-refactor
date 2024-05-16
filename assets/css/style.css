@@ -1,13 +1,19 @@
+/*Universal selector to set up 
+to box-sizing, padding, and margin
+for the entire page. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/*Body selector, set background color*/
 body {
     background-color: #d9dcd6;
 }
 
+/*Header selector, set padding, font, background color,
+and font color for header*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +21,23 @@ header {
     color: #ffffff;
 }
 
+/*Targets h1 in the header element
+sets the nav items inline with Horiseon */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/*Targets the seo in the h1 header header element
+so that it appears the same color as the background
+within the word Horiseon*/
 header h1 .seo {
     color: #d9dcd6;
 }
 
+/*Targets the nav element and sets the padding, margin,
+font-family, and font-size. Float right makes the nav items
+appear to the right of the main header instead of below*/
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,25 +46,35 @@ nav {
     font-size: 20px;
 }
 
+/*Targets the unordered list element and assigns no style*/
 ul {
     list-style-type: none;
 }
 
+/*Targets the list items in the header so the navigation pane
+items appear in line with a 25px marigin all around*/
 li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/*Targets the anchor element, assigns no decoration to text,
+and sets the font color to white for the navigation pane items*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/*Targets the p element and sets all text within to 16px*/
 p {
     font-size: 16px;
 }
 
-.hero {
+/*Selector for the figure, previously the hero class, meaning the primary image which is called
+via URL, sets image height to 800px, the width to expand across the full space
+of the viewing window, sets a margin all around of 25px, is centered over the 
+background, and covers all background.*/
+figure {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -59,22 +83,31 @@ p {
     background-position: center;
 }
 
+/*Sets the float-left class so that anything calling it will display on the left side of the
+of the parent container with a 25px margin between it and content to the right*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/*Sets the float-right class so that anything calling it will display on the right side of the
+of the parent container with a 25px margin between it and content to the left*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-.content {
+/*Targets the main element, sets the width to 75%, with a 20px margin to the left 
+and aligns the section to the left, leaving room to the right for the benefits section.*/
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/*Targets the 'search engine optimation', 'online reputation management', and 
+'social media marketing' and sets the bottom margin to 20px, the padding to 50px, height for each
+section to 300px, and sets the background color, font color, and font family*/
 .search-engine-optimization,
 .online-reputation-management,
 .social-media-marketing {
@@ -86,12 +119,16 @@ p {
     color: #ffffff;
 }
 
+/*Targets the image in 'search engine optimation', 'online reputation management', and 
+'social media marketing' and sets the max-height to 200px*/
 .search-engine-optimization img,
 .online-reputation-management img,
 .social-media-marketing img {
     max-height: 200px;
 }
 
+/*Targets h2 in 'search engine optimation', 'online reputation management', and 
+'social media marketing' and sets the bottom marging to 20px and the font size to 36px*/
 .search-engine-optimization h2,
 .online-reputation-management h2,
 .social-media-marketing h2 {
@@ -99,7 +136,10 @@ p {
     font-size: 36px;
 }
 
-.benefits {
+/*Targets the aside element to set the backround color, font family, height, width, padding, and 
+margin. Set float right so that the container displays to the right of the 
+main class (previously content). */
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -110,28 +150,31 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead,
-.benefit-brand,
-.benefit-cost {
+/*Targets the benefits class so each instance the class is called
+they have a bottom margin of 32px and a font color of white*/
+.benefits {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-lead h3,
-.benefit-brand h3,
-.benefit-cost h3 {
+/*Targets the h3 element within the benefits class so that when the header
+is called, it has a bottom margin of 10px and the text is displayed in the center of
+the benefits class*/
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-lead img,
-.benefit-brand img,
-.benefit-cost img {
+/*Targets the image within the benefits class so that when the image is called
+the image is displayed stacked (blocked) with a margin of 10px and a max width of 150px*/
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/*Targets the footer element and assigns it a font-family, 30px padding, 
+and aligns the text in the center of the element (centering it on the page)*/
 footer {
     padding: 30px;
     clear: both;
@@ -139,6 +182,8 @@ footer {
     text-align: center;
 }
 
+/*Targets the h2 element within the footer class so that the text 
+provided has a font size of 20px*/
 footer h2 {
     font-size: 20px;
 }
